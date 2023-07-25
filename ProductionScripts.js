@@ -13,7 +13,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-.category-box .category-icon, h1 > .fa.category-icon {
+.category-box .category-icon, .fa.category-icon {
 font-size: 3em;
 display: inline block; 
 }
