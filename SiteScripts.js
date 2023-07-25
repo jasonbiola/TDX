@@ -12,8 +12,7 @@ h1 {
 .DetailAction  { 
   display: block;
   font-weight: normal;
-  text-align: center;
-}
+  }
 
 a.DetailAction {
   font-size: 18px;
