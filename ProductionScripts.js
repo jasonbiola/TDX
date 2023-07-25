@@ -13,8 +13,8 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-.fa-4x {
-font-size: 2em;
+.category-box .category-icon, h1 > .fa.category-icon {
+font-size: 3em;
 }
 
 
