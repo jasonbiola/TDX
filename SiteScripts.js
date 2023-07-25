@@ -1,13 +1,4 @@
 var styles = `
-h1 { 
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  }
 
 .DetailAction  { 
   display: block;
@@ -17,10 +8,6 @@ h1 {
 a.DetailAction {
   font-size: 18px;
   }  
-
-h3 .media.category-box .category-box-text-content {
-color: #2268AB;
-}
 
 h3.category-title {
 text-align: center;
