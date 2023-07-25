@@ -18,7 +18,7 @@ a.DetailAction {
   font-size: 18px;
   }  
 
-.media.category-box .category-box-text-content {
+h3 .media.category-box .category-box-text-content {
 color: #2268AB;
 }
 
