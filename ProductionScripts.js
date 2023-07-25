@@ -15,6 +15,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 
 .category-box .category-icon, h1 > .fa.category-icon {
 font-size: 3em;
+display: inline block; 
 }
 
 
