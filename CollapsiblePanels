@@ -1,0 +1,35 @@
+// Function to generate the collapsible panels
+  function generatePanels(numPanels) {
+    const panelContainer = document.getElementById("panelContainer");
+
+    for (let i = 1; i <= numPanels; i++) {
+      const panelDiv = document.createElement("div");
+      panelDiv.classList.add("panel", "panel-default");
+
+      const panelHeadingDiv = document.createElement("div");
+      panelHeadingDiv.classList.add("panel-heading");
+      panelHeadingDiv.setAttribute("data-target", `.Switch${i}`);
+      panelHeadingDiv.setAttribute("data-toggle", "collapse");
+
+      const panelTitle = document.createElement("strong");
+      panelTitle.textContent = `Panel ${i} Title`;
+
+      panelHeadingDiv.appendChild(panelTitle);
+
+      const panelBodyDiv = document.createElement("div");
+      panelBodyDiv.classList.add("panel", "panel-body", `Switch${i}`, "collapse");
+
+      const panelContent = document.createElement("p");
+      panelContent.textContent = `Content for Panel ${i} goes here. This is some sample content for Panel ${i}.`;
+
+      panelBodyDiv.appendChild(panelContent);
+
+      panelDiv.appendChild(panelHeadingDiv);
+      panelDiv.appendChild(panelBodyDiv);
+
+      panelContainer.appendChild(panelDiv);
+    }
+  }
+
+  // Call the function to generate 50 panels
+  generatePanels(50);
