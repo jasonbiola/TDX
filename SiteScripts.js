@@ -13,6 +13,10 @@ a.DetailAction {
   font-size: 18px;
   }  
 
+a.DetailAction, button.DetailAction, div.DetailAction {
+  font-size: 18px;
+}
+
 h3.category-title {
 text-align: center;
 }
