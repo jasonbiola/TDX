@@ -19,7 +19,7 @@ a.DetailAction {
   }  
   
 h3.category-title {
-text-align: center
+text-align: center;
 color: #2268AB;
 }
 `
