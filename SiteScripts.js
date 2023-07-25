@@ -12,7 +12,7 @@ h1 {
 
 .DetailAction  { 
   display: block;
-  font-weight: bold;
+  font-weight: normal;
 }
 `
 
