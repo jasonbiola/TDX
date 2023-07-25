@@ -7,13 +7,16 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-  color: red;
-}
+  }
 
 .DetailAction  { 
   display: block;
   font-weight: normal;
 }
+
+a.DetailAction {
+  font-size: 10px;
+}  
 `
 
 var styleSheet = document.createElement("style")
