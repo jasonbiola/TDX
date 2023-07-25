@@ -17,7 +17,7 @@ h3.category-title {
 text-align: center;
 }
 `
-
+ 
 var styleSheet = document.createElement("style")
 styleSheet.innerText = styles
 document.head.appendChild(styleSheet)
