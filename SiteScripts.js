@@ -7,6 +7,7 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  color:red;
 }
 
 .DetailAction  { 
