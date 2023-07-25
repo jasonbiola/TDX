@@ -17,11 +17,11 @@ h1 {
 
 a.DetailAction {
   font-size: 18px;
-  color: red;
   }  
   
 h3.category-title {
 text-align: center
+color: #2268AB;
 }
 `
 
