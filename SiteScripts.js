@@ -15,7 +15,7 @@ h1 {
 }
 
 a.DetailAction {
-  font-size: 10px;
+  font-size: 18px;
 }  
 `
 
