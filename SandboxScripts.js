@@ -1,6 +1,6 @@
 var styles = `
 
-#ctl00_ctl00_cpContent_cpContent_divDescription {
+div#ctl00_ctl00_cpContent_cpContent_divDescription {
   background-color: #d9edf;
 }
 
