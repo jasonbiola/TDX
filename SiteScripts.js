@@ -16,6 +16,7 @@ h1 {
 
 a.DetailAction {
   font-size: 18px;
+  text-align: center;
 }  
 `
 
