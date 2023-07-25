@@ -18,7 +18,7 @@ a.DetailAction {
   font-size: 18px;
   }  
 
-.category-box .category-title {
+.media.category-box .category-box-text-content {
 color: #2268AB;
 }
 
