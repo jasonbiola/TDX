@@ -1,7 +1,7 @@
 var styles = `
 h1 { 
   display: block;
-  font-size: 5em;
+  font-size: 2em;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
