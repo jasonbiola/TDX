@@ -1,6 +1,6 @@
 var styles = `
 
-gutter-top.ckeShim {
+#ctl00_ctl00_cpContent_cpContent_divDescription {
   background-color: #d9edf;
 }
 
