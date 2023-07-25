@@ -18,6 +18,9 @@ font-size: 3em;
 display: inline block; 
 }
 
+.gutter-top-sm {
+margin-top: 16px;
+}
 
 `
  
