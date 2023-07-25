@@ -1,6 +1,6 @@
 var styles = `
 
-gutter-top ckeShim {
+gutter-top.ckeShim {
   background-color: #d9edf;
 }
 
