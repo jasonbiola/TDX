@@ -17,7 +17,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-media-left leftIcon {
+media-left.leftIcon {
 font-size: 3em;
 }
 
