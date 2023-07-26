@@ -17,7 +17,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-media-left.leftIcon {
+gutter-top-sm, media-object, category-icon, fa, fa-4x, fa-fw" {
 font-size: 3em;
 }
 
