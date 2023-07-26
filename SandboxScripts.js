@@ -19,6 +19,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 
 .category-box .category-icon {
 font-size: 3em;
+margin-top: 16px;
 }
 
 .media.category-box .category-box-text-content {
