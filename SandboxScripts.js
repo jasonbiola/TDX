@@ -21,8 +21,8 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 font-size: 3em;
 }
 
-//.gutter-top-sm {
-margin-top: 16px;
+.media.category-box .category-box-text-content {
+display: inline-block;
 }
 
 
