@@ -1,7 +1,7 @@
 var styles = `
 
-div#ctl00_ctl00_cpContent_cpContent_divDescription {
-  background-color: #d9edf;
+.gutter-bottom {
+    background-color: #d9edf;
 }
 
 .DetailAction  { 
