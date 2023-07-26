@@ -17,10 +17,6 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-h3.category-title {
-text-align: center;
-}
-
 .category-box .category-icon, .fa.category-icon {
 font-size: 2em;
 }
