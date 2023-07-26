@@ -1,6 +1,6 @@
 var styles = `
 
-body {
+.media.category-box {
     background-color: #d9edf;
 }
 
