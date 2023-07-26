@@ -17,11 +17,11 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-.category-box .category-icon, .fa.category-icon {
-font-size: 2em;
+media-left leftIcon {
+font-size: 3em;
 }
 
-.gutter-top-sm {
+//.gutter-top-sm {
 margin-top: 16px;
 }
 
