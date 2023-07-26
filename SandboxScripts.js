@@ -17,7 +17,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-.category-box, .category-icon" {
+.category-box .category-icon {
 font-size: 3em;
 }
 
