@@ -22,11 +22,6 @@ font-size: 3em;
 margin-top: 16px;
 }
 
-.media.category-box .category-box-text-content {
-display: inline-block;
-}
-
-
 `
 
 var styleSheet = document.createElement("style")
