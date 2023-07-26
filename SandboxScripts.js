@@ -20,6 +20,16 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 h3.category-title {
 text-align: center;
 }
+
+.category-box .category-icon, .fa.category-icon {
+font-size: 2em;
+}
+
+.gutter-top-sm {
+margin-top: 16px;
+}
+
+
 `
 
 var styleSheet = document.createElement("style")
