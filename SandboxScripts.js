@@ -1,6 +1,6 @@
 var styles = `
 
-div.gutter-bottom {
+body {
     background-color: #d9edf;
 }
 
