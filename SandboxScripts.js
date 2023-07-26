@@ -1,9 +1,5 @@
 var styles = `
 
-.media.category-box {
-    background-color: #d9edf;
-}
-
 .DetailAction  { 
   display: block;
   font-weight: normal;
