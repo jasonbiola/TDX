@@ -17,7 +17,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
-gutter-top-sm, media-object, category-icon, fa, fa-4x, fa-fw" {
+.category-box .category-icon" {
 font-size: 3em;
 }
 
