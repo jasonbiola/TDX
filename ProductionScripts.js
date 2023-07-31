@@ -3,7 +3,6 @@ var styles = `
 .DetailAction  { 
   display: block;
   font-weight: normal;
-  vertical-align: top;
   }
 
 a.DetailAction {
@@ -12,6 +11,7 @@ a.DetailAction {
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
+  vertical-align: top;
 }
 
 .category-box .category-icon {
