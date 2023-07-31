@@ -18,8 +18,6 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 
 /* This makes the action button icon centered vertically */
 .fa-fw {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
