@@ -1,9 +1,9 @@
 var styles = `
 
 .DetailAction  { 
-  display: block;
   font-weight: normal;
-  vertical-align: text-top;
+  display: flex;
+  align-items: flex-start;
   }
 
 a.DetailAction {
