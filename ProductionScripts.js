@@ -7,6 +7,7 @@ var styles = `
 
 a.DetailAction {
   font-size: 18px;
+  vertical-align: top;
   }  
 
 a.DetailAction, button.DetailAction, div.DetailAction {
