@@ -2,12 +2,12 @@ var styles = `
 
 .DetailAction  { 
   font-weight: normal;
-  display: flex;
-  align-items: flex-start;
   }
 
 a.DetailAction {
   font-size: 18px;
+  display: flex;
+  align-items: flex-start;
    }  
 
 a.DetailAction, button.DetailAction, div.DetailAction {
