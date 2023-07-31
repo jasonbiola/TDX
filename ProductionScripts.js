@@ -11,7 +11,7 @@ a.DetailAction {
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
-  vertical-align: top;
+  vertical-align: text-top;
 }
 
 .category-box .category-icon {
