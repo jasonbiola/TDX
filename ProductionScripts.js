@@ -10,12 +10,16 @@ a.DetailAction {
   font-size: 18px;
   display: flex;
   align-items: center;
-  flex-direction: row;
   }  
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
   flex-wrap: wrap;
+  }
+
+/* This is the icon in the button */
+.fa-fw {
+    flex-shrink: 0;
   }
 
 /* This makes the category button icons  smaller */
