@@ -9,7 +9,7 @@ var styles = `
 a.DetailAction {
   font-size: 18px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   }  
 
