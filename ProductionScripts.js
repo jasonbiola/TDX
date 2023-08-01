@@ -12,7 +12,6 @@ a.DetailAction {
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
-  display: flex;
   align-items: flex-start;
   }
 
