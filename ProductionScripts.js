@@ -16,13 +16,13 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   }
 
 .fa {
-  text-align: center;
+  
 }
 
 
 /* This makes the action button icon centered vertically - Need correct code for this */
 .fa-fw {
-  
+  text-align: center;
 }
 
 /* This makes the category button icons smaller */
