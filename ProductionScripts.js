@@ -18,7 +18,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   flex-wrap: wrap;
   }
 
-/* This makes the category button icons smaller */
+/* This makes the category button icons  smaller */
 .category-box .category-icon {
 font-size: 3em;
 margin-top: 16px;
