@@ -19,7 +19,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 
 /* This is the icon in the button */
 .fa-fw {
-    flex-shrink: 0;
+    order: -1;
   }
 
 /* This makes the category button icons  smaller */
