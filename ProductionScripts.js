@@ -16,7 +16,6 @@ a.DetailAction {
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
-  flex: 1;
   }
 
 /* This makes the action button icon centered vertically - Need correct code for this */
