@@ -17,11 +17,6 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   flex-wrap: wrap;
   }
 
-/* This makes the action button icon centered vertically - Need correct code for this */
-.fa-fw {
- 
-}
-
 /* This makes the category button icons smaller */
 .category-box .category-icon {
 font-size: 3em;
