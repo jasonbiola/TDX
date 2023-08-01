@@ -7,19 +7,21 @@ var styles = `
 
 /* This makes the action button text smaller and the text aligned */
 a.DetailAction {
-  font-size: 18px;
+  position: relative;
   display: flex;
   align-items: center;
-  }  
-
-a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
-  flex-wrap: wrap;
-  }
+  }  
 
 /* This is the icon in the button */
 .fa-fw {
-    order: -1;
+    position: absolute;
+  }
+
+a.DetailAction, button.DetailAction, div.DetailAction {
+  font-size: 18px;
+  text-align: center;
+  flex: 1;
   }
 
 /* This makes the category button icons  smaller */
