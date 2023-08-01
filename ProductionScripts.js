@@ -10,6 +10,7 @@ a.DetailAction {
   position: relative;
   display: flex;
   align-items: center;
+  padding-left: 26px;
   font-size: 18px;
   }  
 
@@ -21,7 +22,6 @@ a.DetailAction {
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
   text-align: center;
-  padding-left: 26px;
   flex: 1;
   }
 
