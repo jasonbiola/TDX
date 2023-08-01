@@ -10,11 +10,11 @@ a.DetailAction {
   font-size: 18px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   }  
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
+  flex-wrap: wrap;
   }
 
 /* This makes the action button icon centered vertically - Need correct code for this */
