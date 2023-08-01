@@ -16,7 +16,6 @@ a.DetailAction {
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
-  text-align: center;
   flex: 1;
   }
 
