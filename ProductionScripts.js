@@ -5,24 +5,13 @@ var styles = `
   font-weight: normal;
   }
 
-/* This makes the action button text smaller and the text aligned */
+/* This makes the action button text smaller */
 a.DetailAction {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 26px;
   font-size: 18px;
   }  
 
-/* This is the icon in the button */
-.fa-fw {
-    position: absolute;
-  }
-
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
-  text-align: center;
-  flex: 1;
   }
 
 /* This makes the category button icons  smaller */
