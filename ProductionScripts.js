@@ -16,8 +16,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   }
 
 .fa {
-  align-items: flex-start;
-  display: flex;
+  text-align: center;
 }
 
 
