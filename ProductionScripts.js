@@ -9,11 +9,15 @@ var styles = `
 a.DetailAction {
   font-size: 18px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   }  
 
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
+  text-align: center;
+  flex: 1;
   }
 
 /* This makes the action button icon centered vertically - Need correct code for this */
