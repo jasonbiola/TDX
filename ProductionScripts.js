@@ -15,6 +15,12 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   align-items: flex-start;
   }
 
+.fa {
+  align-items: flex-start;
+  display: flex;
+}
+
+
 /* This makes the action button icon centered vertically - Need correct code for this */
 .fa-fw {
   
