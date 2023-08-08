@@ -26,10 +26,11 @@ margin-top: 16px;
   }
 
  div.rss-headline {
-    color: #2268A0;
+    font-family: Helvetica Neue;
+    color: #2b2b2b;
     font-size: 1.2em;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1.42857143;
   }
 
 `
