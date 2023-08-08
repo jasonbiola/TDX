@@ -31,8 +31,7 @@ div.rss-container {
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.42857143;
-    padding: 15px;
-  }
+   }
 
 `
  
