@@ -24,7 +24,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   }
 
  div.rss-headline {
-    font: #2268A0;
+    color: #2268A0;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
