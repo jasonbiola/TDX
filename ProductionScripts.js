@@ -34,7 +34,7 @@ div.rss-container {
    }
 
 .input-group .form-control {
-    border-color: #2268ab;
+    border: 2px solid #2268ab;
 }
 
 .input-group-btn>.btn-default {
