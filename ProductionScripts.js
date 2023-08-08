@@ -20,7 +20,7 @@ font-size: 3em;
 margin-top: 16px;
 }
 
-.rss-container {
+div.rss-container {
    padding: 15px;
    font-family: Arial, sans-serif;
   }
@@ -31,6 +31,7 @@ margin-top: 16px;
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.42857143;
+    padding: 15px;
   }
 
 `
