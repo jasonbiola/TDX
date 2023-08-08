@@ -1,22 +1,39 @@
-// pinElementToTop.js
+const rssUrl = 	http://status.biola.edu/history.rss; // Replace with your RSS feed URL
+  const rssList = document.getElementById('rss-list');
 
-// Function to pin the element with class "DetailAction" containing the text "Report a Problem" as the top item
-function pinElementToTop() {
-  const divSidebar = document.getElementById("divSidebar");
-  const elements = divSidebar.getElementsByClassName("DetailAction");
+  fetch(rssUrl)
+    .then(response => response.text())
+    .then(data => {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(data, 'text/xml');
+      const items = xmlDoc.querySelectorAll('item');
 
-  let targetElement = null;
-  for (let i = 0; i < elements.length; i++) {
-    const element = elements[i];
-    if (element.innerText.includes("Report a Problem")) {
-      targetElement = element;
-      break;
-    }
-  }
+      let entryCount = 0;
 
-  if (targetElement) {
-    // Move the target element to the top of the column
-    divSidebar.prepend(targetElement);
-  }
-}
+      items.forEach(item => {
+        if (entryCount < 8) {
+          const title = item.querySelector('title').textContent;
+          const description = item.querySelector('description').textContent;
+
+          const li = document.createElement('li');
+          li.className = 'rss-entry';
+
+          const titleDiv = document.createElement('div');
+          titleDiv.className = 'rss-title';
+          titleDiv.textContent = title;
+
+          const descriptionDiv = document.createElement('div');
+          descriptionDiv.className = 'rss-description';
+          descriptionDiv.textContent = description;
+
+          li.appendChild(titleDiv);
+          li.appendChild(descriptionDiv);
+
+          rssList.appendChild(li);
+
+          entryCount++;
+        }
+      });
+    })
+    .catch(error => console.error('Error fetching RSS feed:', error));
 
