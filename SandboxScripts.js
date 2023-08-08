@@ -14,19 +14,17 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 }
 
 .category-box .category-icon {
-font-size: 3em;
-margin-top: 16px;
+   font-size: 3em;
+   margin-top: 16px;
 }
 
 .rss-container {
-    background-color: #D9EDF7;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
+   padding: 10px;
+   font-family: Arial, sans-serif;
   }
 
  div.rss-headline {
+    font: #2268A0;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
