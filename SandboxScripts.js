@@ -19,7 +19,7 @@ margin-top: 16px;
 }
 
 .rss-container {
-    background-color: #f4f4f4;
+    background-color: #D9EDF7;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@ margin-top: 16px;
 
  div.rss-headline {
     font-size: 14px;
-    font-weight: 500px;
+    font-weight: 500;
     line-height: 16px;
   }
 
