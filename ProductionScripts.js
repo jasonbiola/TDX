@@ -39,6 +39,7 @@ div.rss-container {
 
 .input-group-btn>.btn-default {
     border: #000000;
+}
 `
  
 var styleSheet = document.createElement("style")
