@@ -34,11 +34,11 @@ div.rss-container {
    }
 
 .input-group .form-control {
-    border: black;
+    border: #000000;
 }
 
 .input-group-btn>.btn-default {
-    border: black;
+    border: #000000;
 `
  
 var styleSheet = document.createElement("style")
