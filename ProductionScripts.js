@@ -33,13 +33,6 @@ div.rss-container {
     line-height: 1.42857143;
    }
 
-.input-group .form-control {
-    border: #000000;
-}
-
-.input-group-btn>.btn-default {
-    border: #000000;
-}
 `
  
 var styleSheet = document.createElement("style")
