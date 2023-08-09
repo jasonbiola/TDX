@@ -33,6 +33,10 @@ div.rss-container {
     line-height: 1.42857143;
    }
 
+.input-group .form-control {
+    border: #2268ab;
+}
+
 `
  
 var styleSheet = document.createElement("style")
