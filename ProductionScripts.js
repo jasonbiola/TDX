@@ -37,6 +37,8 @@ div.rss-container {
     border: #2268ab;
 }
 
+.input-group-btn>.btn-default {
+    border: #2268ab;
 `
  
 var styleSheet = document.createElement("style")
