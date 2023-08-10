@@ -1,4 +1,4 @@
-const rssUrl = 	http://status.biola.edu/history.rss; // Replace with your RSS feed URL
+const rssUrl = `http://status.biola.edu/history.rss`; // Replace with your RSS feed URL
   const rssList = document.getElementById('rss-list');
 
   fetch(rssUrl)
