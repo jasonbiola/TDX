@@ -33,6 +33,10 @@ div.rss-container {
     line-height: 1.42857143;
    }
 
+.quickjump-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 `
  
 var styleSheet = document.createElement("style")
