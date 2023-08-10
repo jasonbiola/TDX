@@ -43,7 +43,7 @@ div.rss-container {
   margin: 0 10px;
   text-align: center;
   width: 200px;
-}
+  }
 `
  
 var styleSheet = document.createElement("style")
