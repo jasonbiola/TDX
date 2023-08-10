@@ -44,6 +44,10 @@ div.rss-container {
   text-align: center;
   width: 200px;
   }
+
+#32772 {
+  margin: 2em;
+  }
 `
  
 var styleSheet = document.createElement("style")
