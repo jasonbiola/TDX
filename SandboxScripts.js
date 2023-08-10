@@ -29,7 +29,7 @@ function addBootstrapCSS (bsVersion)
 
   var jsUrl = `https://cdn.jsdelivr.net/npm/bootstrap@${bsVersion}/dist/js/bootstrap.bundle.min.js`;
   var jsTag = `<script src="${jsUrl}"></script>`;
-  var body = document.getElementsbyTagName ("body")[0];
+  var body = document.getElementsByTagName ("body")[0];
   body.appendChild (jsTag);
 }
 
