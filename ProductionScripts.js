@@ -37,6 +37,7 @@ div.rss-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  }
 `
  
 var styleSheet = document.createElement("style")
