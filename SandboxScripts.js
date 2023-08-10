@@ -27,6 +27,7 @@ function addBootstrapCSS ()
   head.appendChild(cssTag);
 
   var bsJsCtr = document.createElement ("div");
+  bsJsCtr.id = "bootstrap-5_3_1-container";
   bsJsCtr.innerHTML = `<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>`;
   var body = document.getElementsByTagName ("body")[0];
   body.appendChild (bsJsCtr);
