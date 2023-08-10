@@ -38,6 +38,12 @@ div.rss-container {
   flex-flow: row wrap;
   justify-content: center;
   }
+  
+.quickjump {
+  margin: 0 10px;
+  text-align: center;
+  width: 200px;
+}
 `
  
 var styleSheet = document.createElement("style")
