@@ -31,7 +31,6 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   }
 
 `
-
-var styleSheet = document.createElement("style")
-styleSheet.innerText = styles
-document.head.appendChild(styleSheet)
+var stylesheetUrl = `https://jasonbiola.github.io/TDX/biola-stylesheet.css`;
+var stylesheetLink = `<link href="${stylesheetUrl}`" rel="stylesheet" type="text/css">`;
+document.head.appendChild(stylesheetLink)
