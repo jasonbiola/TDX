@@ -9,6 +9,31 @@ div.rss-headline {color: #2268A0;font-size: 14px;font-weight: 500;line-height: 1
 */
 
 /**
+* Pulls in the CSS and JS files for the specified version of Bootstrap
+* @param {string} bsVersion - The version of Bootstrap to include
+**/
+function addBootstrapCSS (bsVersion)
+{
+  //  Define the url of the Bootstrap CSS file
+  var stylesheetUrl = `https://cdn.jsdelivr.net/npm/bootstrap@${bsVersion}/dist/css/bootstrap.min.css`;
+  //  Define a new "link" element to be appended to the document head
+  var stylesheetLink = document.createElement ("link");
+  stylesheetLink.rel  = "stylesheet";
+  stylesheetLink.type = "text/css";
+  stylesheetLink.href = stylesheetUrl;
+  stylesheetLink.media = "all";
+  //  Get a handle on the document's head
+  var head = document.getElementsByTagName ("head")[0];
+  //  Append the stylesheet link to the head
+  head.appendChild(stylesheetLink);
+
+  var jsUrl = `https://cdn.jsdelivr.net/npm/bootstrap@${bsVersion}/dist/js/bootstrap.bundle.min.js`;
+  var jsTag = `<script src="${jsUrl}"></script>`;
+  var body = document.getElementsbyTagName ("body")[0];
+  body.appendChild (jsTag);
+}
+
+/**
 * Appends the biola-stylesheet.css file to the page's head
 **/
 function appendStylesheet ()
@@ -30,3 +55,4 @@ function appendStylesheet ()
 }
 
 appendStylesheet ();
+addBootstrapCSS ("5.3.1");
