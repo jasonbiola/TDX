@@ -61,7 +61,7 @@ function appendStylesheet ()
   var head = document.getElementsByTagName('head')[0];
   //  Append the stylesheet link to the head
   head.appendChild(stylesheetLink);
-}
+}()
 
-appendStylesheet ();
-addBootstrapCSS ();
+//appendStylesheet ();
+//addBootstrapCSS ();
