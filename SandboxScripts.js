@@ -35,7 +35,7 @@ function addFoundationCSS ()
   //  Get a handle on the document's head
   var head = document.getElementsByTagName ("head")[0];
   //  Append the stylesheet link to the head
-  head.prependChild(cssTag);
+  head.prepend(cssTag);
 }
 
 /**
