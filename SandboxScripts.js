@@ -59,8 +59,26 @@ function appendStylesheet ()
   head.appendChild(stylesheetLink);
 }
 
+function fixSearchBar () {
+    $("#content .site-search").each (function () {
+        $(this)
+            .addClass("align-middle grid-x small-12")
+            .css({
+                "background-color":"#d9edf7",
+                "border":"1px solid #2268ab",
+                "border-radius":"10px",
+                "margin":"0",
+                "max-width":"100%",
+                "padding":"14px"
+            });
+        $(this).children("*")
+            .addClass ("cell")
+            $(this).find("input").addClass ("auto");
+    })
+}
+
 appendStylesheet ();
 addFoundationCSS ();
 addFoundationJS();
-
-console.log ("SandboxScripts.js version 1.0.5");
+fixSearchBar ();
+console.log ("SandboxScripts.js version 1.0.6");
