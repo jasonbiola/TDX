@@ -81,4 +81,4 @@ appendStylesheet ();
 addFoundationCSS ();
 addFoundationJS();
 fixSearchBar ();
-console.log ("SandboxScripts.js version 1.0.6");
+console.log ("SandboxScripts.js version 1.0.7");
