@@ -11,16 +11,16 @@ div.rss-headline {color: #2268A0;font-size: 14px;font-weight: 500;line-height: 1
 /**
 * Pulls in the CSS and JS files for the specified version of Bootstrap
 **/
-function addBootstrapCSS ()
+function addFoundationCSS ()
 {
   //  Define the url of the Bootstrap CSS file
-  var stylesheetUrl = `https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css`;
+  var stylesheetUrl = `https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css`;
   //  Define a new "link" element to be appended to the document head
   var cssTag = document.createElement ("link");
+  cssTag.crossorigin = "anonymous";
   cssTag.rel  = "stylesheet";
   cssTag.type = "text/css";
   cssTag.href = stylesheetUrl;
-  cssTag.media = "all";
   //  Get a handle on the document's head
   var head = document.getElementsByTagName ("head")[0];
   //  Append the stylesheet link to the head
@@ -64,4 +64,4 @@ function appendStylesheet ()
 }
 
 appendStylesheet ();
-//addBootstrapCSS ();
+addFoundationCSS ();
