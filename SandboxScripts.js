@@ -77,3 +77,5 @@ function appendStylesheet ()
 appendStylesheet ();
 addFoundationCSS ();
 addFoundationJS();
+
+console.log ("SandboxScripts.js version 1.0.5");
