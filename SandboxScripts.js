@@ -35,22 +35,7 @@ function addFoundationCSS ()
   //  Get a handle on the document's head
   var head = document.getElementsByTagName ("head")[0];
   //  Append the stylesheet link to the head
-  head.appendChild(cssTag);
-
-  var bsJsCtr = document.createElement ("div");
-  bsJsCtr.id = "bootstrap-5_3_1-container";
-  bsJsCtr.innerHTML = `<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>`;
-  var body = document.getElementsByTagName ("body")[0];
-  body.appendChild (bsJsCtr);
-/*  
-  var jsUrl = `https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js`;
-  var jsTag = document.createElement ("script");
-  jsTag.src = jsUrl;
-  jsTag.integrity = "sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm";
-  jsTag.crossorigin = "anonymous";
-  var body = document.getElementsByTagName ("body")[0];
-  body.appendChild (jsTag);
-*/
+  head.prependChild(cssTag);
 }
 
 /**
