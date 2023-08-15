@@ -11,6 +11,17 @@ div.rss-headline {color: #2268A0;font-size: 14px;font-weight: 500;line-height: 1
 /**
 * Pulls in the CSS and JS files for the specified version of Bootstrap
 **/
+
+function addFoundationJS () {
+    var script = document.createElement('script');
+    script.onload = function () {
+        $(document).foundation();
+    };
+    script.src = `https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js`;
+    script.crossorigin = "anonymous";
+    document.body.appendChild(script);
+};
+
 function addFoundationCSS ()
 {
   //  Define the url of the Bootstrap CSS file
@@ -65,3 +76,4 @@ function appendStylesheet ()
 
 appendStylesheet ();
 addFoundationCSS ();
+addFoundationJS();
