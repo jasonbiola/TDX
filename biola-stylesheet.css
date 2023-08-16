@@ -41,6 +41,11 @@ label {
   font-size: 1rem;
 }
 
+/* prevent "flash of unformatted content", by hiding elements until Foundation & Bootstrap load */
+.no-fouc {
+  display: none;
+}
+
 .quickjump-container {
   display: flex;
   flex-flow: row wrap;
@@ -56,3 +61,9 @@ label {
 #32772 {
   margin: 2em;
 }
+
+/* Unhides .no-fouc elements once the window has loaded */
+@media screen and (min-width: 40em) {
+  .no-fouc {
+    display: block;
+  }
