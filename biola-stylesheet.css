@@ -12,6 +12,11 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
 
+/* For some reason, Foundation adds weird negative margins to their .grid-margin-x divs. */
+.align-center>.grid-margin-x {
+  margin-left: 0;
+}
+
 /* This makes the category button icons  smaller */
 .category-box .category-icon {
   font-size: 3em;
