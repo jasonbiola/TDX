@@ -1,18 +1,11 @@
-/* This makes the action button text not bold */
-.DetailAction  {
-  font-weight: normal;
-}
-
 /* This makes the action button text smaller */
-a.DetailAction {
-  font-size: 18px;
-}  
-
+/* I believe this is redundante with [.DetailAction] below, but leaving it in the code in case it's not.
 a.DetailAction, button.DetailAction, div.DetailAction {
   font-size: 18px;
 }
+*/
 
-/* For some reason, Foundation adds weird negative margins to their .grid-margin-x divs. */
+/* For some reason, Foundation adds weird negative margins to their [.grid-margin-x] divs, even when they should be centered. */
 .align-center>.grid-margin-x {
   margin-left: 0;
 }
@@ -21,6 +14,17 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 .category-box .category-icon {
   font-size: 3em;
   margin-top: 16px;
+}
+
+/* Override Foundation's odd decision to decrease the font-size of labels */
+.control-label {
+  font-size: 1em;
+}
+
+/* This makes the action button text not bold */
+.DetailAction  {
+  font-size: 18px;  /* Adding this here to replace the [a.DetailAction, button.DetailAction, div.DetailAction] styling above. */
+  font-weight: normal;
 }
 
 div.rss-container {
@@ -34,11 +38,6 @@ div.rss-headline {
   font-size: 1.2em;
   font-weight: 400;
   line-height: 1.42857143;
-}
-
-/* Override Foundation's odd decision to decrease the font-size of labels */
-label {
-  font-size: 1rem;
 }
 
 /* prevent "flash of unformatted content", by hiding elements until Foundation & Bootstrap load */
