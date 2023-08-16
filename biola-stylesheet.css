@@ -17,7 +17,7 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 }
 
 /* Override Foundation's odd decision to decrease the font-size of labels */
-.control-label {
+label {
   font-size: 1em;
 }
 
