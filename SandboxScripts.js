@@ -59,7 +59,7 @@ function appendStylesheet ()
   head.appendChild(stylesheetLink);
 }
 
-function fixSearchBar () {
+function fixSearchBars () {
     $("#content .site-search").each (function () {
         console.log (`Restyling in-page site search ${ $(this).attr("id") }`);
         $(this)
@@ -80,8 +80,7 @@ function fixSearchBar () {
 appendStylesheet ();
 addFoundationCSS ();
 addFoundationJS();
-$(document).ready (
-    function (){
-        fixSearchBar ();
-    });
+
+var fsbTimeout = setTimeout(fixSearchBars, 500);
+
 console.log ("SandboxScripts.js version 1.0.8");
