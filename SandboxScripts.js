@@ -1,15 +1,6 @@
-/* We shouldn't need this style information anymore; all styling should be handled by the biola-stylesheet.css file, which is appended via the script below. But I didn't want to just delete all of this, and then miss it later.  -Adam Snell, 2023/08/10
-var styles = `.DetailAction  {  display: block; font-weight: normal;  }
-a.DetailAction {font-size: 18px;}  
-a.DetailAction, button.DetailAction, div.DetailAction {font-size: 18px;}
-.category-box .category-icon {font-size: 3em;margin-top: 16px;}
-.rss-container {padding: 10px;font-family: Arial, sans-serif;}
-div.rss-headline {color: #2268A0;font-size: 14px;font-weight: 500;line-height: 16px;}
-`
-*/
-
 /**
-* Pulls in the CSS and JS files for the specified version of Bootstrap
+* Appends the Foundation 6.7.5 javascript file to <body>,
+* and calls Foundation's initialization function
 **/
 
 function addFoundationJS () {
@@ -22,6 +13,10 @@ function addFoundationJS () {
     document.body.appendChild(script);
 };
 
+/**
+* Prepends the Foundation 6.7.5 CSS to <head>
+* (so that Bootstrap's CSS will take precedence for any "shared" classes)
+**/
 function addFoundationCSS ()
 {
   //  Define the url of the Bootstrap CSS file
@@ -39,7 +34,7 @@ function addFoundationCSS ()
 }
 
 /**
-* Appends the biola-stylesheet.css file to the page's head
+* Appends the biola-stylesheet.css file to <head>
 **/
 function appendStylesheet ()
 {
@@ -59,6 +54,10 @@ function appendStylesheet ()
   head.appendChild(stylesheetLink);
 }
 
+/**
+* Searches the #content div for any .site-search containers,
+* and restyles them to make them "more shiny"
+**/
 function fixSearchBars () {
     $("#content .site-search").each (function () {
         console.log (`Restyling in-page site search ${ $(this).attr("id") }`);
@@ -81,6 +80,7 @@ appendStylesheet ();
 addFoundationCSS ();
 addFoundationJS();
 
+//    Wait .5 seconds for the DOM to finish loading, before calling fixSearchBars
 var fsbTimeout = setTimeout(fixSearchBars, 500);
-
-console.log ("SandboxScripts.js version 1.0.8");
+//    This is just for visual confirmation of which version of the script is loading.
+console.log ("SandboxScripts.js version 2023.08.16");
