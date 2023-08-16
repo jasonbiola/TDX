@@ -61,6 +61,7 @@ function appendStylesheet ()
 
 function fixSearchBar () {
     $("#content .site-search").each (function () {
+        console.log (`Restyling in-page site search ${ $(this).attr("id") }`);
         $(this)
             .addClass("align-middle grid-x small-12")
             .css({
@@ -71,14 +72,16 @@ function fixSearchBar () {
                 "max-width":"100%",
                 "padding":"14px"
             });
-        $(this).children("*")
-            .addClass ("cell")
-            $(this).find("input").addClass ("auto");
+        $(this).children("*").addClass ("cell");
+        $(this).find("input").addClass ("auto");
     })
 }
 
 appendStylesheet ();
 addFoundationCSS ();
 addFoundationJS();
-fixSearchBar ();
-console.log ("SandboxScripts.js version 1.0.7");
+$(document).ready (
+    function (){
+        fixSearchBar ();
+    });
+console.log ("SandboxScripts.js version 1.0.8");
