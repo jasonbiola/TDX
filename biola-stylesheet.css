@@ -16,11 +16,6 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   margin-top: 16px;
 }
 
-/* Override Foundation's odd decision to decrease the font-size of labels */
-label {
-  font-size: 1em;
-}
-
 /* This makes the action button text not bold */
 .DetailAction  {
   font-size: 18px;  /* Adding this here to replace the [a.DetailAction, button.DetailAction, div.DetailAction] styling above. */
@@ -38,6 +33,11 @@ div.rss-headline {
   font-size: 1.2em;
   font-weight: 400;
   line-height: 1.42857143;
+}
+
+/* Override Foundation's odd decision to decrease the font-size of labels */
+label {
+  font-size: 1em;
 }
 
 /* prevent "flash of unformatted content", by hiding elements until Foundation & Bootstrap load */
