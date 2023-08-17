@@ -43,6 +43,46 @@ label {
   font-size: 1em;
 }
 
+.landing-page-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.landing-page-header > div {
+    margin: 0 1em;
+    text-align: center;
+}
+.landing-page-header-container {
+    display: flex;
+    flex-flow: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing-page-header-text-container > h1,
+.landing-page-header-text-container > h2 {
+    margin: 0;
+    padding: 0;
+}
+.landing-page-header-text-container > h1 {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+.landing-page-header-text-container > h2 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+.landing-page-header-text-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.landing-page-subheader {
+    display: flex;
+    justify-content: center;
+}
+
 /* prevent "flash of unformatted content", by hiding elements until Foundation & Bootstrap load */
 .no-fouc {
   display: none;
