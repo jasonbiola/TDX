@@ -18,12 +18,11 @@ a.DetailAction, button.DetailAction, div.DetailAction {
 
 /* This makes the action button text not bold */
 .DetailAction  {
-  font-size: 18px;  /* Adding this here to replace the [a.DetailAction, button.DetailAction, div.DetailAction] styling above. */
   font-weight: normal;
 }
 
 a.DetailAction, button.DetailAction, div.DetailAction {
-  font-size: 18px;
+  font-size: 18px;  /* This needs to be here becauase it doesn't work just using [.DetailAction], don't change it back Adam */
 }
 
 div.rss-container {
