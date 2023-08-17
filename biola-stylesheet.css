@@ -63,8 +63,9 @@ label {
 }
 .landing-page-header-text-container > h1,
 .landing-page-header-text-container > h2 {
-    margin: 0;
-    padding: 0;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
 }
 .landing-page-header-text-container > h1 {
     font-size: 50px;
