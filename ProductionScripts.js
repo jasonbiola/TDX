@@ -77,8 +77,8 @@ function fixSearchBars () {
 }
 
 appendStylesheet ();
-addFoundationCSS ();
-addFoundationJS();
+//addFoundationCSS ();
+//addFoundationJS();
 
 //    Wait .5 seconds for the DOM to finish loading, before calling fixSearchBars
 var fsbTimeout = setTimeout(fixSearchBars, 500);
