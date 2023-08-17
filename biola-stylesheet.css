@@ -80,7 +80,11 @@ label {
 }
 .landing-page-subheader {
     display: flex;
+    font-size: 21px;
+    font-weight: 500;
     justify-content: center;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 /* prevent "flash of unformatted content", by hiding elements until Foundation & Bootstrap load */
