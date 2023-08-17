@@ -95,6 +95,9 @@ label {
     text-align: center;
     width: 200px;
 }
+.quickjump a {
+  border-bottom: none;
+}
 
 .quickjump-container {
     display: flex;
