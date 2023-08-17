@@ -48,16 +48,19 @@ label {
   display: none;
 }
 
-.quickjump-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-  
 .quickjump {
-  margin: 0 10px;
-  text-align: center;
-  width: 200px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 1em;
+    text-align: center;
+    width: 200px;
+}
+
+.quickjump-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 #32772 {
