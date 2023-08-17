@@ -22,6 +22,10 @@ a.DetailAction, button.DetailAction, div.DetailAction {
   font-weight: normal;
 }
 
+a.DetailAction, button.DetailAction, div.DetailAction {
+  font-size: 18px;
+}
+
 div.rss-container {
   padding: 15px;
   font-family: Arial, sans-serif;
