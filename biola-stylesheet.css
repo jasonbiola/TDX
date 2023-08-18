@@ -85,7 +85,7 @@ label {
     justify-content: space-between;
 }
 .landing-page-subheader {
-    border-top: 1px dotted #2268ab;
+    border-top: 1px solid #2268ab;
     display: flex;
     font-size: 21px;
     font-weight: 500;
