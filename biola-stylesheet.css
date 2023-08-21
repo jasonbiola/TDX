@@ -22,7 +22,7 @@
   padding: var(--bmh-padding);
 }
 
-.container {
+.bu-ctr {
   border-color: var(--container-border-color);
   border-style: solid;
   border-width: 1px;;
