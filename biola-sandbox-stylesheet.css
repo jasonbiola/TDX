@@ -1,0 +1,211 @@
+/* Define CSS variables for global styles */
+:root {
+  --biola-dark-blue: #2268ab;
+  /* bmh = "Biola module header" */
+  --bmh-bg: black;
+  --bmh-fg: white;
+  --bmh-margin: 0;
+  --bmh-padding: .5em;
+  /* bwc = "Biola widget container" */
+  --bwc-border-color: black;
+
+  --list-link-color: var(--biola-dark-blue);
+}
+
+/* For some reason, Foundation adds weird negative margins to their [.grid-margin-x] divs, even when they should be centered. */
+.align-center>.grid-margin-x {
+  margin-left: 0;
+}
+
+.biola-module h2 {
+  background-color: var(--bmh-bg);
+  color: var(--bmh-fg);
+  margin: var(--bmh-margin);
+  padding: var(--bmh-padding);
+}
+
+.buwidget-container {
+  border-color: var(--bwc-border-color);
+  border-style: solid;
+  border-width: 1px;
+  ;
+}
+
+/* This makes the category button icons  smaller */
+.category-box .category-icon {
+  font-size: 3em;
+  margin-top: 16px;
+}
+
+/* This makes the action button text not bold */
+.DetailAction {
+  font-weight: normal;
+}
+
+/* This needs to be here becauase it doesn't work just using [.DetailAction], don't change it back Adam */
+a.DetailAction,
+button.DetailAction,
+div.DetailAction {
+  font-size: 18px;
+}
+
+/* Override Foundation's odd decision to decrease the font-size of labels */
+label {
+  font-size: 1em;
+}
+
+.landing-page-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.landing-page-header>div {
+  margin: 0 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.landing-page-header-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2em 0;
+}
+
+.landing-page-header-text-container>h1,
+.landing-page-header-text-container>h2 {
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page-header-text-container>h1 {
+  font-family: arial;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.landing-page-header-text-container>h2 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+.landing-page-header-text-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.landing-page-subheader {
+  border-top: 1px solid #2268ab;
+  display: flex;
+  font-size: 21px;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 3px;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.large-2-column {
+  /* This is further defined in the Media Queries section at the bottom of the stylesheet */
+  display: grid;
+  row-gap: 2em;
+}
+
+.link-list-container {
+  /*border: 1px solid black;*/
+  padding: .5em;
+}
+
+.link-list-container>* {
+  margin: 0;
+}
+
+.link-list-container a {
+  color: var(--list-link-color);
+}
+
+.link-list-container>h3 {
+  font-weight: 500;
+}
+
+.link-list-container>ul {
+  list-style-type: disc;
+  padding-left: 1.75em;
+}
+
+.no-border {
+  border: none;
+}
+
+/* prevent "flash of unformatted content", by hiding elements until Foundation & Bootstrap load */
+.no-fouc {
+  display: none;
+}
+
+.quickjump {
+  display: flex;
+  flex-flow: column;
+  margin: 0 1em;
+  text-align: center;
+  width: 200px;
+}
+
+.quickjump a {
+  border-bottom: none;
+}
+
+.quickjump-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+div.rss-container {
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+div.rss-headline {
+  font-family: Helvetica Neue;
+  color: #2b2b2b;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.42857143;
+}
+
+#32772 {
+  margin: 2em;
+}
+
+
+/** Media queries for responsive elements **/
+
+@media only screen and (max-width: 991px) {
+
+  /* On non-large screens, make .large-2-column containers single-column.*/
+  .large-2-column {
+      grid-template-columns: 100%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  /* Unhides .no-fouc elements once the window has loaded */
+  .no-fouc {
+      display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .large-2-column {
+      column-gap: 2em;
+      grid-template-columns: calc(50% - 1em) calc(50% - 1em);
+  }
+}
