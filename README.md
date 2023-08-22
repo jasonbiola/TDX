@@ -5,7 +5,9 @@ Jason Witt created this GitHub repo to house customization scripts and content.
 This ReadMe file last updated: August 17, 2023 by Adam Snell
 
 ## Custom CSS
-We have created a [biola-stylesheet.css](./biola-stylesheet.css) file for customizing element styling.
+We have created two stylesheets for customizing element styling:
+* [biola-stylesheet.css](./biola-stylesheet.css) contains the "production" version of the stylesheet.
+* [biola-sandbox-=stylesheet.css](./biola-sandbox-stylesheet.css) contains sandbox styling for testing.
 
 ## Using these JavaScript files
 To add these files to TeamDynamix, use the GitHub Pages urls for the files. These URLs start with `https://jasonbiola.github.io/TDX/`, with the name of the file appended. You can copy/paste the following code into TDx:
