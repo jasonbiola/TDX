@@ -6,7 +6,7 @@ function runDelayedFunctions ()
 function runSandboxFunctions ()
 {
     console.log ("Sandbox");
-    appendStylesheet ("biola-stylesheet.css");
+    appendStylesheet ("biola-sandbox-stylesheet.css");
 }
 
 function runProductionFunctions ()
