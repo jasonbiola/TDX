@@ -37,6 +37,13 @@
   margin-top: 16px;
 }
 
+/* hides any TDx modules that contain a ".hide-module-container" element */
+.desktop-module:has(.hide-module-container)
+{
+  display: none;
+  margin: 0;
+}
+
 /* This makes the action button text not bold */
 .DetailAction {
   font-weight: normal;
