@@ -1,13 +1,16 @@
 /* Define CSS variables for global styles */
 :root {
   --biola-dark-blue: #2268ab;
-  /* bmh = "Biola module header" */
-  --bmh-bg: black;
-  --bmh-fg: white;
-  --bmh-margin: 0;
-  --bmh-padding: .5em;
-  /* bwc = "Biola widget container" */
-  --bwc-border-color: black;
+  --biola-light-blue: #d9edf7;
+  --biola-grey: #666666;
+  --biola-gray: var(--biola-grey);  /* Because some people like to spell grey the wrong way 🙄 */
+
+  --h2-bg: var(--biola-light-blue);
+  --h2-border-radius: 6px;         /* not five, not 10, 6. */
+  --h2-fg: black;
+  --h2-margin: 0;
+  --h2-padding: .25em;
+  --h3-font-weight: 500;
 
   --list-link-color: var(--biola-dark-blue);
 }
@@ -18,23 +21,31 @@
 }
 
 .biola-module h2 {
-  background-color: var(--bmh-bg);
-  color: var(--bmh-fg);
-  margin: var(--bmh-margin);
-  padding: var(--bmh-padding);
+  background-color: var(--h2-bg);
+  border-radius: var(--h2-border-radius) var(--h2-border-radius) 0 0;
+  color: var(--h2-fg);
+  margin: var(--h2-margin);
+  padding: var(--h2-padding);
+}
+
+.biola-module h3 {
+  font-weight: var(--h3-font-weight);
 }
 
 .buwidget-container {
-  border-color: var(--bwc-border-color);
-  border-style: solid;
-  border-width: 1px;
-  ;
 }
 
 /* This makes the category button icons  smaller */
 .category-box .category-icon {
   font-size: 3em;
   margin-top: 16px;
+}
+
+/* hides any TDx modules that contain a ".hide-module-container" element */
+.desktop-module:has(.hide-module-container)
+{
+  display: none;
+  margin: 0;
 }
 
 /* This makes the action button text not bold */
@@ -131,11 +142,7 @@ label {
   color: var(--list-link-color);
 }
 
-.link-list-container>h3 {
-  font-weight: 500;
-}
-
-.link-list-container>ul {
+.link-list-container > ul {
   list-style-type: disc;
   padding-left: 1.75em;
 }
