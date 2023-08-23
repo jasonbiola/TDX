@@ -27,6 +27,11 @@
   padding: var(--bmh-padding);
 }
 
+.biola-module h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .buwidget-container {
   border-color: var(--bwc-border-color);
   border-style: solid;
@@ -134,20 +139,15 @@ label {
 }
 
 .link-list-container>* {
+  font-size: 10px;
   margin: 0;
 }
 
 .link-list-container a {
   color: var(--list-link-color);
-  font-size: 10px;
 }
 
-.link-list-container>h3 {
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.link-list-container>ul {
+.link-list-container > ul {
   list-style-type: disc;
   padding-left: 1.75em;
 }
