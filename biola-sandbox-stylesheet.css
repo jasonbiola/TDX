@@ -22,13 +22,11 @@
 .biola-module h2 {
   background-color: var(--bmh-bg);
   color: var(--bmh-fg);
-  font-size: 14px;
   margin: var(--bmh-margin);
   padding: var(--bmh-padding);
 }
 
 .biola-module h3 {
-  font-size: 12px;
   font-weight: 500;
 }
 
@@ -139,7 +137,6 @@ label {
 }
 
 .link-list-container>* {
-  font-size: 10px;
   margin: 0;
 }
 
