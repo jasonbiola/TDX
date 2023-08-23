@@ -66,6 +66,6 @@ else
     runProductionFunctions ()
 
 //    Wait .5 seconds for the DOM to finish loading, before calling the rest of the initialization functions
-var fsbTimeout = setTimeout(runDelayedFunctions, 500);
+var fsbTimeout = setTimeout(runDelayedFunctions, 1000);
 //    This is just for visual confirmation of which version of the script is loading.
 console.log ("SandboxScripts.js version 2023.08.16");
