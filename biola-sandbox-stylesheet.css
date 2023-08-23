@@ -4,16 +4,13 @@
   --biola-light-blue: #d9edf7;
   --biola-grey: #666666;
   --biola-gray: var(--biola-grey);  /* Because some people like to spell grey the wrong way 🙄 */
-  /* bmh = "Biola module header" */
-  --bmh-bg: var(--biola-light-blue);
-  --bmh-fg: black;
-  --bmh-margin: 0;
-  --bmh-padding: .5em;
-  /* bwc = "Biola widget container" */
-  --bwc-border: var(--bwc-border-size) var(--bwx-border-style) var(--bwc-border-color);
-  --bwc-border-color: var(--biola-light-blue);
-  --bwc-border-size: 1px;
-  --bwc-border-style: solid;
+
+  --h2-bg: var(--biola-light-blue);
+  --h2-border-radius: 6px;         /* not five, not 10, 6. */
+  --h2-fg: black;
+  --h2-margin: 0;
+  --h2-padding: .25em;
+  --h3-font-weight: 500;
 
   --list-link-color: var(--biola-dark-blue);
 }
@@ -24,19 +21,18 @@
 }
 
 .biola-module h2 {
-  background-color: var(--bmh-bg);
-  color: var(--bmh-fg);
-  margin: var(--bmh-margin);
-  padding: var(--bmh-padding);
+  background-color: var(--h2-bg);
+  border-radius: var(--h2-border-radius) var(--h2-border-radius) 0 0;
+  color: var(--h2-fg);
+  margin: var(--h2-margin);
+  padding: var(--h2-padding);
 }
 
 .biola-module h3 {
-  font-weight: 500;
+  font-weight: var(--h3-font-weight);
 }
 
 .buwidget-container {
-  border: var(--bwc-border);
-  ;
 }
 
 /* This makes the category button icons  smaller */
