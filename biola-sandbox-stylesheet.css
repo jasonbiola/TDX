@@ -1,8 +1,10 @@
 /* Define CSS variables for global styles */
 :root {
   --biola-dark-blue: #2268ab;
+  --biola-grey: #666666;
+  --biola-gray: var(--biola-grey);  /* Because some people like to spell grey the wrong way 🙄 */
   /* bmh = "Biola module header" */
-  --bmh-bg: black;
+  --bmh-bg: var(--biola-dark-blue);
   --bmh-fg: white;
   --bmh-margin: 0;
   --bmh-padding: .5em;
@@ -20,6 +22,7 @@
 .biola-module h2 {
   background-color: var(--bmh-bg);
   color: var(--bmh-fg);
+  font-size: 14px;
   margin: var(--bmh-margin);
   padding: var(--bmh-padding);
 }
@@ -136,9 +139,11 @@ label {
 
 .link-list-container a {
   color: var(--list-link-color);
+  font-size: 10px;
 }
 
 .link-list-container>h3 {
+  font-size: 12px;
   font-weight: 500;
 }
 
