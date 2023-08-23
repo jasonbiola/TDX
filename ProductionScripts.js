@@ -1,45 +1,27 @@
-/**
-* Appends the Foundation 6.7.5 javascript file to <body>,
-* and calls Foundation's initialization function
-**/
-
-function addFoundationJS () {
-    var script = document.createElement('script');
-    script.onload = function () {
-        $(document).foundation();
-    };
-    script.src = `https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js`;
-    script.crossorigin = "anonymous";
-    document.body.appendChild(script);
-};
-
-/**
-* Prepends the Foundation 6.7.5 CSS to <head>
-* (so that Bootstrap's CSS will take precedence for any "shared" classes)
-**/
-function addFoundationCSS ()
+function runDelayedFunctions ()
 {
-  //  Define the url of the Bootstrap CSS file
-  var stylesheetUrl = `https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css`;
-  //  Define a new "link" element to be appended to the document head
-  var cssTag = document.createElement ("link");
-  cssTag.crossorigin = "anonymous";
-  cssTag.rel  = "stylesheet";
-  cssTag.type = "text/css";
-  cssTag.href = stylesheetUrl;
-  //  Get a handle on the document's head
-  var head = document.getElementsByTagName ("head")[0];
-  //  Append the stylesheet link to the head
-  head.prepend(cssTag);
+    fixSearchBars ();
+}
+
+function runSandboxFunctions ()
+{
+    console.log ("Sandbox");
+    appendStylesheet ("biola-sandbox-stylesheet.css");
+}
+
+function runProductionFunctions ()
+{
+    console.log ("Production");
+    appendStylesheet ("biola-stylesheet.css");
 }
 
 /**
 * Appends the biola-stylesheet.css file to <head>
 **/
-function appendStylesheet ()
+function appendStylesheet (fileName)
 {
   //  Define where the stylesheet is stored
-  var stylesheetUrl = `https://jasonbiola.github.io/TDX/biola-stylesheet.css`;
+  var stylesheetUrl = `https://jasonbiola.github.io/TDX/${fileName}`;
   
   //  Define a new "link" element to be appended to the document head
   var stylesheetLink = document.createElement('link');
@@ -76,11 +58,14 @@ function fixSearchBars () {
     })
 }
 
-appendStylesheet ();
-//addFoundationCSS ();
-//addFoundationJS();
+//    If the page calling this script is in sandbox, run the Sandbox scripts
+if ( window.location.href.match(/sbtdclient/i) )
+    runSandboxFunctions ()
+//    Otherwise, run the Production scripts
+else
+    runProductionFunctions ()
 
-//    Wait .5 seconds for the DOM to finish loading, before calling fixSearchBars
-var fsbTimeout = setTimeout(fixSearchBars, 500);
+//    Wait .5 seconds for the DOM to finish loading, before calling the rest of the initialization functions
+var fsbTimeout = setTimeout(runDelayedFunctions, 1000);
 //    This is just for visual confirmation of which version of the script is loading.
-console.log ("ProductionScripts.js version 2023.08.16");
+console.log ("SandboxScripts.js version 2023.08.16");
