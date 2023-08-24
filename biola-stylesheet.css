@@ -163,7 +163,9 @@ label {
   text-align: center;
   width: 200px;
 }
-
+.quickjump>*{
+  margin: .5em 0;
+}
 .quickjump a {
   border-bottom: none;
 }
