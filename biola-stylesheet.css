@@ -159,9 +159,8 @@ label {
 .quickjump {
   display: flex;
   flex-flow: column;
-  margin: 0 1em;
   text-align: center;
-  width: 200px;
+  width: 110px;
 }
 .quickjump>*{
   margin: .5em 0;
@@ -173,7 +172,7 @@ label {
 .quickjump-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
 
