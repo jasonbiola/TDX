@@ -7,12 +7,14 @@ function runSandboxFunctions ()
 {
     console.log ("Sandbox");
     appendStylesheet ("biola-sandbox-stylesheet.css");
+    linkAccordions ();
 }
 
 function runProductionFunctions ()
 {
     console.log ("Production");
     appendStylesheet ("biola-stylesheet.css");
+    linkAccordions ();
 }
 
 /**
@@ -57,6 +59,33 @@ function fixSearchBars () {
         $(this).find("input").addClass ("auto");
     })
 }
+
+function linkAccordions ()
+{
+    var accordions = $(".accordion");
+    let i = 0;
+    while (accordions.hasOwnProperty (i))
+    {
+        let acc = accordions[i];
+        let accId = `accordion-${i}`;
+        try{
+            var trigger = $(acc).children(".accordion-trigger")[0];
+            var target = $(acc).children(".accordion-target")[0];
+            
+            $(target).attr("accordion-id",accId);
+            $(target).addClass (`collapse`);
+
+            $(trigger).attr(`data-target`, `[accordion-id=${accId}]`);
+            $(trigger).attr(`data-toggle`,`collapse`);
+        }
+        catch (err)
+        {
+            console.log (`unable to link accordion ${i}: ${err}`);
+        }
+        i++;
+    }
+}
+
 
 //    If the page calling this script is in sandbox, run the Sandbox scripts
 if ( window.location.href.match(/sbtdclient/i) )
