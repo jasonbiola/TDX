@@ -6,14 +6,16 @@ function runDelayedFunctions ()
 
 function runSandboxFunctions ()
 {
-    console.log ("Sandbox");
     appendStylesheet ("biola-sandbox-stylesheet.css");
+    //    This is just for visual confirmation of which version of the script is loading.
+    console.log ("SandboxScripts.js version 2023.08.24");
 }
 
 function runProductionFunctions ()
 {
-    console.log ("Production");
     appendStylesheet ("biola-stylesheet.css");
+    //    This is just for visual confirmation of which version of the script is loading.
+    console.log ("ProductionxScripts.js version 2023.08.29");
 }
 
 /**
@@ -95,5 +97,3 @@ else
 
 //    Wait .5 seconds for the DOM to finish loading, before calling the rest of the initialization functions
 var fsbTimeout = setTimeout(runDelayedFunctions, 1000);
-//    This is just for visual confirmation of which version of the script is loading.
-console.log ("SandboxScripts.js version 2023.08.29");
