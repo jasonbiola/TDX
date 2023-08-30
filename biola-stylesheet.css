@@ -1,34 +1,41 @@
 /* Define CSS variables for global styles */
 :root {
+  /* color definitions */
   --biola-dark-blue: #2268ab;
   --biola-light-blue: #d9edf7;
   --biola-grey: #666666;
   --biola-gray: var(--biola-grey);  /* Because some people like to spell grey the wrong way 🙄 */
+  --info-border-color: #bce8f1;
 
+  /* header definitions */
   --h2-bg: var(--biola-light-blue);
-  --h2-border-radius: 6px;         /* not five, not 10, 6. */
+  --h2-border-radius: var(--default-border-radius);
   --h2-fg: black;
   --h2-margin: 0;
   --h2-padding: .25em;
   --h3-font-weight: 500;
 
+  --default-border-radius: 6px;
   --list-link-color: var(--biola-dark-blue);
 }
 
 /** ⇓ Accordions ⇓ **/
 .accordion {
-  background-color: var(--biola-dark-blue);
-  border: 1px solid var(--biola-dark-blue);
-  border-radius: 6px;
+  background-color: var(--info-border-color);
+  border: 1px solid var(--info-border-color);
+  border-radius: var(--default-border-radius);
   display: flex;
   flex-flow: column;
   justify-content: start;
 }
+.accordion.theme-dark_blue {
+  background-color: var(--biola-dark-blue);
+  border: 1px solid var(--biola-dark-blue);
+}
 
 .accordion-target {
   background-color: white;
-  border-radius: 0 0 6px 6px;
-  border-top: 1px solid var(--biola-dark-blue);
+  border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
   margin: 0;
   padding: 6px;
 }
@@ -41,9 +48,8 @@
 
 .accordion-trigger {
   align-items: center;
-  background-color: var(--biola-dark-blue);
-  border-radius: var(--h2-border-radius);
-  color: white;
+  background-color: var(--biola-light-blue);
+  border-radius: var(--default-border-radius);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -51,8 +57,11 @@
   padding: 6px;
   width: inherit;
 }
+.theme-dark_blue .accordion-trigger {
+  background-color: var(--biola-dark-blue);
+  color: white;
+}
 .accordion-trigger::after {
-  //color: var(--biola-dark-blue);
   content: "\f150";
   font-family: "Font Awesome 5 Free";
   font-size: 1.5em;
@@ -63,6 +72,9 @@
 }
 .accordion:has(.accordion-target.in)>.accordion-trigger::after {
         content: "\f0d8";
+}
+.theme-dark_blue .accordion-trigger::after {
+  color: white;
 }
 
 /** ⇑ Accordions ⇑ **/
