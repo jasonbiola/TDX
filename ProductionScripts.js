@@ -7,6 +7,7 @@ function runDelayedFunctions ()
 function runSandboxFunctions ()
 {
     appendStylesheet ("biola-sandbox-stylesheet.css");
+    loadFontAwesome6 ();
     //    This is just for visual confirmation of which version of the script is loading.
     console.log ("SandboxScripts.js version 2023.08.24");
 }
@@ -14,8 +15,9 @@ function runSandboxFunctions ()
 function runProductionFunctions ()
 {
     appendStylesheet ("biola-stylesheet.css");
+    loadFontAwesome6 ();
     //    This is just for visual confirmation of which version of the script is loading.
-    console.log ("ProductionxScripts.js version 2023.08.29");
+    console.log ("ProductionxScripts.js version 2023.08.30");
 }
 
 /**
@@ -61,6 +63,11 @@ function fixSearchBars () {
     })
 }
 
+/**
+* This function finds all .accordion elements, and creates a unique link between the .accordion-trigger and .accordion-target sub-elements.
+* This was created to simplify the creation of accordions in the TDx richtext editor. Without it, content creators would have to go into
+* the source code and manually enter a `data-target` attribute for each accordion.
+**/
 function linkAccordions ()
 {
     var accordions = $(".accordion");
@@ -87,6 +94,15 @@ function linkAccordions ()
     }
 }
 
+function loadFontAwesome6 ()
+{
+    var sTag = document.createElement ("script");
+    sTag.src = `https://kit.fontawesome.com/8fd3c79167.js`;
+    sTag.crossorigin = `anonymous`;
+    var head = document.getElementsByTagName('head')[0];
+    //  Append the stylesheet link to the head
+    head.appendChild(sTag);
+}
 
 //    If the page calling this script is in sandbox, run the Sandbox scripts
 if ( window.location.href.match(/sbtdclient/i) )
