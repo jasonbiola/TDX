@@ -15,6 +15,58 @@
   --list-link-color: var(--biola-dark-blue);
 }
 
+/** ⇓ Accordions ⇓ **/
+.accordion {
+  background-color: var(--biola-dark-blue);
+  border: 1px solid var(--biola-dark-blue);
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+}
+
+.accordion-target {
+  background-color: white;
+  border-radius: 0 0 6px 6px;
+  border-top: 1px solid var(--biola-dark-blue);
+  margin: 0;
+  padding: 6px;
+}
+.accordion-target>*:first-child, accordion-trigger>*:first-child {
+  margin-top: 0;
+}
+.accordion-target>*:last-child, accordion-trigger>*:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-trigger {
+  align-items: center;
+  background-color: var(--biola-dark-blue);
+  border-radius: var(--h2-border-radius);
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 6px;
+  width: inherit;
+}
+.accordion-trigger::after {
+  //color: var(--biola-dark-blue);
+  content: "\f150";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.5em;
+  font-weight: 900;
+  float: right;
+  text-align: center;
+  width: 1.5em
+}
+.accordion:has(.accordion-target.in)>.accordion-trigger::after {
+        content: "\f0d8";
+}
+
+/** ⇑ Accordions ⇑ **/
+
 /* For some reason, Foundation adds weird negative margins to their [.grid-margin-x] divs, even when they should be centered. */
 .align-center>.grid-margin-x {
   margin-left: 0;
