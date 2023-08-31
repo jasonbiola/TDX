@@ -18,6 +18,7 @@
 
   --default-border-radius: 6px;
   --list-link-color: var(--biola-dark-blue);
+  --toggle-icon-size: 24px;
 }
 
 /** ⇓ Accordions ⇓ **/
@@ -67,11 +68,12 @@
   color: var(--biola-dark-blue);
   content: "\f150";
   font-family: "Font Awesome 5 Free";
-  font-size: 24px;
+  font-size: var(--toggle-icon-size);
   font-weight: 900;
   float: right;
+  height: var(--toggle-icon-size);
   text-align: center;
-  width: 24px;
+  width: var(--toggle-icon-size);
 }
 .accordion:has(.accordion-target.in)>.accordion-trigger::after {
         content: "\f0d8";
