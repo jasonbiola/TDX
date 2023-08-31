@@ -64,6 +64,7 @@
   color: white;
 }
 .accordion-trigger::after {
+  color: var(--biola-dark-blue);
   content: "\f150";
   font-family: "Font Awesome 5 Free";
   font-size: 1.5em;
