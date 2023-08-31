@@ -1,19 +1,85 @@
+/** Stylesheet version 23.8.31 **/
 /* Define CSS variables for global styles */
 :root {
+  /* color definitions */
   --biola-dark-blue: #2268ab;
   --biola-light-blue: #d9edf7;
   --biola-grey: #666666;
   --biola-gray: var(--biola-grey);  /* Because some people like to spell grey the wrong way 🙄 */
+  --info-border-color: #bce8f1;
 
+  /* header definitions */
   --h2-bg: var(--biola-light-blue);
-  --h2-border-radius: 6px;         /* not five, not 10, 6. */
+  --h2-border-radius: var(--default-border-radius);
   --h2-fg: black;
   --h2-margin: 0;
   --h2-padding: .25em;
   --h3-font-weight: 500;
 
+  --default-border-radius: 6px;
   --list-link-color: var(--biola-dark-blue);
 }
+
+/** ⇓ Accordions ⇓ **/
+.accordion {
+  background-color: var(--info-border-color);
+  border: 1px solid var(--info-border-color);
+  border-radius: var(--default-border-radius);
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  margin: 1em 0;
+}
+.accordion.theme-dark_blue {
+  background-color: var(--biola-dark-blue);
+  border: 1px solid var(--biola-dark-blue);
+}
+
+.accordion-target {
+  background-color: white;
+  border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+  margin: 0;
+  padding: 6px;
+}
+.accordion-target>*:first-child, accordion-trigger>*:first-child {
+  margin-top: 0;
+}
+.accordion-target>*:last-child, accordion-trigger>*:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-trigger {
+  align-items: center;
+  background-color: var(--biola-light-blue);
+  border-radius: var(--default-border-radius);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 6px;
+  width: inherit;
+}
+.theme-dark_blue .accordion-trigger {
+  background-color: var(--biola-dark-blue);
+  color: white;
+}
+.accordion-trigger::after {
+  content: "\f150";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.5em;
+  font-weight: 900;
+  float: right;
+  text-align: center;
+  width: 1.5em
+}
+.accordion:has(.accordion-target.in)>.accordion-trigger::after {
+        content: "\f0d8";
+}
+.theme-dark_blue .accordion-trigger::after {
+  color: white;
+}
+
+/** ⇑ Accordions ⇑ **/
 
 /* For some reason, Foundation adds weird negative margins to their [.grid-margin-x] divs, even when they should be centered. */
 .align-center>.grid-margin-x {
