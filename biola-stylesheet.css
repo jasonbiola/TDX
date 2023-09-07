@@ -225,6 +225,42 @@ label {
   display: none;
 }
 
+.minicallout {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content:left;
+}
+
+/** ⇓ the "header" for .minicallout ⇓ **/
+.mc-header {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.mc-header::before, .mc-header::after {
+  align-items: center;
+  display: grid;
+  color: red;
+  font-weight: 900;
+  height: 1.5em;
+  margin-right: .5em;
+}
+.mc-header::before {
+  content: "\f06a";
+  font-family: "Font Awesome 6 Free";
+}
+.mc-header::after {
+  content: "Note:";
+  font-family: Arial, Helvetica, sans-serif;
+}
+/** ⇑ the "header" for .minicallout ⇑ **/
+
+/** ⇓ the "body" for .minicallout ⇓ **/
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: .3em;
+}
+/** ⇑ the "body" for .minicallout ⇑ **/
+
 .quickjump {
   display: flex;
   flex-flow: column;
