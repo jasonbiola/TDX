@@ -225,7 +225,7 @@ label {
   display: none;
 }
 
-.minicallout {
+.mini-callout {
   display: grid;
   grid-template-columns: auto auto;
   justify-content:left;
