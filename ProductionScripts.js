@@ -97,7 +97,7 @@ function linkAccordions ()
 function loadFontAwesome6 ()
 {
     var sTag = document.createElement ("script");
-    sTag.src = `https://kit.fontawesome.com/8fd3c79167.js`;
+    sTag.src = `https://kit.fontawesome.com/91fb534223.js`;
     sTag.crossorigin = `anonymous`;
     var head = document.getElementsByTagName('head')[0];
     //  Append the stylesheet link to the head
