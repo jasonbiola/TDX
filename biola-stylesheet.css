@@ -67,7 +67,7 @@
 .accordion-trigger::after {
   color: var(--biola-dark-blue);
   content: "\f150";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Pro";
   font-size: var(--toggle-icon-size);
   font-weight: 900;
   float: right;
@@ -246,7 +246,7 @@ label {
 }
 .mc-header::before {
   content: "\f06a";
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 Pro";
 }
 .mc-header::after {
   content: "Note:";
