@@ -13,11 +13,17 @@
       padding: 10px;
       width: 300px;
     }
-    #ctl00_ctl00_cpContent_cpContent_divTicketName a::before, #ctl00_ctl00_cpContent_cpContent_divWorkflowCurrentStep a::before { /* Add a FontAwesome "information" icon to the link */
+    #ctl00_ctl00_cpContent_cpContent_divTicketName a::before, #ctl00_ctl00_cpContent_cpContent_divWorkflowCurrentStep a::before { /* Define shared icon styling */
       content: "\f05a";
       font-family: "Font Awesome 6 Pro";
       font-size: 20px;
       font-weight: 900;
+    }
+    #ctl00_ctl00_cpContent_cpContent_divTicketName a::before { /* "information" icon */
+      content: "\f05a";
+    }
+    #ctl00_ctl00_cpContent_cpContent_divWorkflowCurrentStep a::before {  /* "check" icon */
+      content: "\f058";
     }
   /** end ticket link restyle **/
 /** end 24.08.13-test **/
