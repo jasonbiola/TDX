@@ -1,7 +1,7 @@
 /** 24.08.13-test **/
 
   /** Restyle the link to the ticket from a workflow step, so that clients can jump easily from Approval step pages to the ticket, to review what they are approving **/
-    #ctl00_ctl00_cpContent_cpContent_divTicketName a { /* Make the link look like a button, so it will stand out on the page */
+    #ctl00_ctl00_cpContent_cpContent_divTicketName a, ctl00_ctl00_cpContent_cpContent_divWorkflowCurrentStep a { /* Make the link look like a button, so it will stand out on the page */
       align-items: center;
       background-color: #bf3935;
       border-radius: 5px;
@@ -13,7 +13,7 @@
       padding: 10px;
       width: 300px;
     }
-    #ctl00_ctl00_cpContent_cpContent_divTicketName a::before { /* Add a FontAwesome "information" icon to the link */
+    #ctl00_ctl00_cpContent_cpContent_divTicketName a::before, ctl00_ctl00_cpContent_cpContent_divWorkflowCurrentStep a::before { /* Add a FontAwesome "information" icon to the link */
       content: "\f05a";
       font-family: "Font Awesome 6 Pro";
       font-size: 20px;
