@@ -317,12 +317,16 @@ div.rss-headline {
 }
 
 /** begin Service Portfolio Entry styling **/
-  .spe-attr-value, .spe-row-header {
-      border-bottom: 1px solid #2268AB;
+  .spe-data-table {
+    border: 1px solid var(--biola-dark-blue);
+    border-collapse: separate;
+  }
+  .spe-row-value, .spe-row-header {
+      border-bottom: 1px solid var(--biola-dark-blue);
       padding: 5px 10px;
   }
   .spe-row-header {
-      background-color: #E5F2FF;
+      background-color: var(--biola-light-blue);
       text-align: right;
       min-width: 16em;
       width: 17em;
