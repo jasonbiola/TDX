@@ -316,6 +316,18 @@ div.rss-headline {
   line-height: 1.42857143;
 }
 
+/** begin Service Portfolio Entry styling **/
+  .spe-attr-value, .spe-row-header {
+      border-bottom: 1px solid #2268AB;
+      padding: 5px 10px;
+  }
+  .spe-row-header {
+      background-color: #E5F2FF;
+      text-align: right;
+      min-width: 16em;
+      width: 17em;
+  }
+/** end Service Portfolio styling **/
 #32772 {
   margin: 2em;
 }
