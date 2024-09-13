@@ -317,7 +317,7 @@ div.rss-headline {
 }
 
 /** begin Service Portfolio Entry styling **/
-  .spe-data-table {
+  .attributes-table, .spe-table {
     border: 1px solid var(--biola-dark-blue);
     border-collapse: separate;
   }
