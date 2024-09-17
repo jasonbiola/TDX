@@ -317,7 +317,7 @@ div.rss-headline {
 }
 
 /** begin Service Portfolio Entry styling **/
-  .spe-attribute-table ul {
+  .spe-attribute-table ul, .spe-attribute-table ol {
     margin-bottom: 0;
   }
   .spe-attribute-table, .spe-table {
