@@ -317,9 +317,10 @@ div.rss-headline {
 }
 
 /** begin Service Portfolio Entry styling **/
-  .attributes-table, .spe-table {
+  .attributes-table, .spe-table, .spe-attribute-table {
     border: 1px solid var(--biola-dark-blue);
     border-collapse: separate;
+    vertical-align: top;
   }
   .spe-row-value, .spe-row-header {
       border-bottom: 1px solid var(--biola-dark-blue);
