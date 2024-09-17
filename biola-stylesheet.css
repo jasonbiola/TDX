@@ -317,19 +317,22 @@ div.rss-headline {
 }
 
 /** begin Service Portfolio Entry styling **/
-  .attributes-table, .spe-table, .spe-attribute-table {
+  .spe-attribute-table ul {
+    margin-bottom: 0;
+  }
+  .spe-attribute-table, .spe-table {
     border: 1px solid var(--biola-dark-blue);
     border-collapse: separate;
-    vertical-align: top;
   }
   .spe-row-value, .spe-row-header {
       border-bottom: 1px solid var(--biola-dark-blue);
+      min-width: 17em;
       padding: 5px 10px;
   }
   .spe-row-header {
       background-color: var(--biola-light-blue);
       text-align: right;
-      min-width: 16em;
+      vertical-align: top;
       width: 17em;
   }
 /** end Service Portfolio styling **/
