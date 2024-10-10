@@ -17,10 +17,21 @@
   --h2-padding: .25em;
   --h3-font-weight: 500;
 
+  --cp-link-color: blue;
+  --cp-link-decor: underline;
+  --cp-link-border-bottom: none !important;
   --default-border-radius: 6px;
   --list-link-color: var(--biola-dark-blue);
   --toggle-icon-size: 24px;
 }
+
+/** ⇓ Reset Client Portal link style to "bright blue, and underlined" ⇓ **/
+#ctl00_ctl00_cpContent_cpContent_divBody a {
+  color: var(--cp-link-color);
+  text-decoration: var(--cp-link-decor);
+  border-bottom: var(--cp-link-border-bottom);
+}
+/** ⇑ Reset Client Portal link style to "bright blue, and underlined" ⇑ **/
 
 /** ⇓ Accordions ⇓ **/
 .accordion {
