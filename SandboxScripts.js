@@ -1,18 +1,24 @@
 function runDelayedFunctions ()
 {
     fixSearchBars ();
+    linkAccordions ();
 }
 
 function runSandboxFunctions ()
 {
-    console.log ("Sandbox");
     appendStylesheet ("biola-sandbox-stylesheet.css");
+    loadFontAwesome6 ();
+    setSearchbarPlaceholder ();
+    //    This is just for visual confirmation of which version of the script is loading.
+    console.log ("SandboxScripts.js version 2025.02.24");
 }
 
 function runProductionFunctions ()
 {
-    console.log ("Production");
     appendStylesheet ("biola-stylesheet.css");
+    loadFontAwesome6 ();
+    //    This is just for visual confirmation of which version of the script is loading.
+    console.log ("ProductionxScripts.js version 2023.08.30");
 }
 
 /**
@@ -58,6 +64,52 @@ function fixSearchBars () {
     })
 }
 
+/**
+* This function finds all .accordion elements, and creates a unique link between the .accordion-trigger and .accordion-target sub-elements.
+* This was created to simplify the creation of accordions in the TDx richtext editor. Without it, content creators would have to go into
+* the source code and manually enter a `data-target` attribute for each accordion.
+**/
+function linkAccordions ()
+{
+    var accordions = $(".accordion");
+    let i = 0;
+    while (accordions.hasOwnProperty (i))
+    {
+        let acc = accordions[i];
+        let accId = `accordion-${i}`;
+        try{
+            var trigger = $(acc).children(".accordion-trigger")[0];
+            var target = $(acc).children(".accordion-target")[0];
+            
+            $(target).attr("accordion-id",accId);
+            $(target).addClass (`collapse`);
+
+            $(trigger).attr(`data-target`, `[accordion-id=${accId}]`);
+            $(trigger).attr(`data-toggle`,`collapse`);
+        }
+        catch (err)
+        {
+            console.log (`unable to link accordion ${i}: ${err}`);
+        }
+        i++;
+    }
+}
+
+function loadFontAwesome6 ()
+{
+    var sTag = document.createElement ("script");
+    sTag.src = `https://kit.fontawesome.com/91fb534223.js`;
+    sTag.crossorigin = `anonymous`;
+    var head = document.getElementsByTagName('head')[0];
+    //  Append the stylesheet link to the head
+    head.appendChild(sTag);
+}
+
+function setSearchbarPlaceholder ()
+{
+  $(`.ModuleContent [id*="SiteSearch-text"]`).attr("placeholder",placeholderText);
+}
+
 //    If the page calling this script is in sandbox, run the Sandbox scripts
 if ( window.location.href.match(/sbtdclient/i) )
     runSandboxFunctions ()
@@ -67,5 +119,3 @@ else
 
 //    Wait .5 seconds for the DOM to finish loading, before calling the rest of the initialization functions
 var fsbTimeout = setTimeout(runDelayedFunctions, 1000);
-//    This is just for visual confirmation of which version of the script is loading.
-console.log ("SandboxScripts.js version 2023.08.16");
