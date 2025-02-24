@@ -105,9 +105,16 @@ function loadFontAwesome6 ()
     head.appendChild(sTag);
 }
 
+/**
+* This function finds all #SiteSearch-text... elements within a .ModuleContent element, and sets the placeholder attribute
+* to the placeholderText value defined below.
+**/
 function setSearchbarPlaceholder ()
 {
-  $(`.ModuleContent [id*="SiteSearch-text"]`).attr("placeholder",placeholderText);
+    //    This text will be inserted as the placeholder text for the in-body searchbar
+    let placeholderText = "Search for services, how-to guides, and troubleshooting tips";
+    //    Load the placeholder text into all [#SiteSearch-text...] items within a .ModuleContent element
+    $(`.ModuleContent [id*="SiteSearch-text"]`).attr("placeholder",placeholderText);
 }
 
 //    If the page calling this script is in sandbox, run the Sandbox scripts
