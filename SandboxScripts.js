@@ -17,8 +17,9 @@ function runProductionFunctions ()
 {
     appendStylesheet ("biola-stylesheet.css");
     loadFontAwesome6 ();
+    setSearchbarPlaceholder ();
     //    This is just for visual confirmation of which version of the script is loading.
-    console.log ("ProductionxScripts.js version 2023.08.30");
+    console.log ("ProductionxScripts.js version 2025.02.24");
 }
 
 /**
