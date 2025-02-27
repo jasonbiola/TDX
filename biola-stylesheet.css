@@ -7,6 +7,12 @@
   --biola-light-blue: #d9edf7;
   --biola-grey: #666666;
   --biola-gray: var(--biola-grey);  /* Because some people like to spell grey the wrong way 🙄 */
+  --callout-halt-dark: #990000ff;
+  --callout-halt-light: #ffccccff;
+  --callout-info-dark: #2268ab;
+  --callout-info-light: #d9edf7;
+  --callout-warning-dark: #997f00ff;
+  --callout-warning-light: #fff2b3ff;
   --info-border-color: #bce8f1;
 
   /* header definitions */
@@ -24,14 +30,6 @@
   --list-link-color: var(--biola-dark-blue);
   --toggle-icon-size: 24px;
 }
-
-/** ⇓ Reset Client Portal link style to "bright blue, and underlined" ⇓ **/
-#ctl00_ctl00_cpContent_cpContent_divBody a {
-  color: var(--cp-link-color);
-  text-decoration: var(--cp-link-decor);
-  border-bottom: var(--cp-link-border-bottom);
-}
-/** ⇑ Reset Client Portal link style to "bright blue, and underlined" ⇑ **/
 
 /** ⇓ Accordions ⇓ **/
 .accordion {
@@ -116,12 +114,74 @@
 .buwidget-container {
 }
 
+/** ⇓ Callouts ⇓ **/
+.callout {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  /*gap: 10px;*/
+}
+.callout::before {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  float: left;
+  font-family: 'Font Awesome 6 Pro';
+  font-size: 3em;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 50px;
+  width: 50px;
+  padding: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+.callout > * {
+  align-self: center;
+  height: 100%;
+  margin: 10px;
+}
+
+.callout.halt {
+  background-color: var(--callout-halt-light);
+  border: 1px solid var(--callout-halt-dark);
+}
+.callout.info {
+  background-color: var(--callout-info-light);
+  border: 1px solid var(--callout-info-dark);
+  }
+.callout.warning {
+  background-color: var(--callout-warning-light);
+  border: 1px solid var(--callout-warning-dark); 
+}
+
+.callout.halt::before {
+  background-color: var(--callout-halt-dark);
+  content: '\e204';
+}
+  .callout.info::before {
+  background-color: var(--callout-info-dark);
+  content: '\f05a';
+  }
+.callout.warning::before {
+  background-color: var(--callout-warning-dark); 
+  content: '\f321';
+}
+/** ⇑ Callouts ⇑ **/
+
 /* This makes the category button icons  smaller */
 .category-box .category-icon {
   font-size: 3em;
   margin-top: 16px;
 }
 
+/** ⇓ Reset Client Portal link style to "bright blue, and underlined" ⇓ **/
+#ctl00_ctl00_cpContent_cpContent_divBody a {
+  color: var(--cp-link-color);
+  text-decoration: var(--cp-link-decor);
+  border-bottom: var(--cp-link-border-bottom);
+}
+/** ⇑ Reset Client Portal link style to "bright blue, and underlined" ⇑ **/
 /** Restyle the link to the ticket from a workflow step, so that clients can jump easily from Approval step pages to the ticket, to review what they are approving **/
   #ctl00_ctl00_cpContent_cpContent_divTicketName a { /* Make the link look like a button, so it will stand out on the page */
     align-items: center;
