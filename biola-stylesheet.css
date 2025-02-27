@@ -140,6 +140,7 @@
   align-self: center;
   height: 100%;
   margin: 10px;
+  max-width: calc(100% - 70px);
 }
 
 .callout.halt {
