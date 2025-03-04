@@ -9,7 +9,7 @@ function runSandboxFunctions ()
     appendStylesheet ("biola-sandbox-stylesheet.css");
     loadFontAwesome6 ();
     setSearchbarPlaceholder ();
-    window.setTimeout (loadGetHelpButton, 5000);
+    window.setTimeout (loadGetHelpButton, 2000);
     //    This is just for visual confirmation of which version of the script is loading.
     console.log ("SandboxScripts.js version 2025.03.04");
 }
