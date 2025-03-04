@@ -9,8 +9,9 @@ function runSandboxFunctions ()
     appendStylesheet ("biola-sandbox-stylesheet.css");
     loadFontAwesome6 ();
     setSearchbarPlaceholder ();
+    loadGetHelpButton ();
     //    This is just for visual confirmation of which version of the script is loading.
-    console.log ("SandboxScripts.js version 2025.02.24");
+    console.log ("SandboxScripts.js version 2025.03.04");
 }
 
 function runProductionFunctions ()
@@ -94,6 +95,26 @@ function linkAccordions ()
         }
         i++;
     }
+}
+
+/**
+* This function injects a Get Help button into the top menu bar in TDX Client Portal
+**/
+function loadGetHelpButton ()
+{
+    //    Get the current address for a backlink reference
+    var backlinkUrl = encodeURI (window.location.href);
+    //    Create a new div to contain the button
+    var containerDiv = document.createElement ("div");
+    containerDiv.id="bu-get-help";
+    containerDiv.style = `align-content: center; align-items: center; display: flex; flex-flow: row wrap; float: right; flex-direction: row; height: 50px; justify-content: flex-end; padding: 10px;`;
+    //    inside the div, create a "button" containing a link to the form, including the backlink
+    containerDiv.innerHTML = `
+    <button class="btn btn-light"><a href="https://us1.teamdynamix.com/tdapp/app/form/start?c=NWE3NDc4OGMtNGQ5ZC00YTczLWFkNjUtOGNhYzk1YWRkNmMw&t=VXVwZ1RBPT1BQTZoWVlkMkdLQWVuRStpZ0pMSWhQSXcvQXFLZktPMERIRlhoa0s1NmlpcmoyZlFxR0dEM1FTK1B2Z0VBMVFJdVpGdUlzQk5MUEROSXk1ZUx1SWFVQi9vdVBBK0ZXbVFjbzgxSmhSZ3JPUWxVQ2d3c28ycEI0TDRMdkI2KzRZUQ&backlink=${backlinkUrl}">
+    	Report a problem
+    </a></button>`;
+    //    prepend the container div into the #ct100_mainNav div
+    $(`#ctl00_mainNav`).prepend (containerDiv);
 }
 
 function loadFontAwesome6 ()
