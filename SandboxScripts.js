@@ -114,7 +114,7 @@ function loadGetHelpButton ()
     	Report a problem
     </a></button>`;
     //    prepend the container div into the #ct100_mainNav div
-    $(`#ctl00_mainNav`).prepend (containerDiv);
+    $(`#td-navbar-collapse`).prepend (containerDiv);
 }
 
 function loadFontAwesome6 ()
